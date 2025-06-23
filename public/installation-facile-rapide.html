@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Installation VisionZone en 7 Étapes | Guide Complet IPTV Smarters Pro</title>
+  <meta name="description" content="Guide complet d'installation VisionZone en 7 étapes détaillées. Installez IPTV Smarters Pro facilement sur Smart TV, Box Android, Fire TV Stick et mobiles.">
+  <meta name="keywords" content="installation VisionZone, IPTV Smarters Pro, guide installation, 7 étapes, Smart TV, Box Android, Fire TV Stick, installation facile">
+  <meta property="og:title" content="Installation VisionZone en 7 Étapes | Guide Complet">
+  <meta property="og:description" content="Guide complet d'installation VisionZone en 7 étapes détaillées pour tous vos appareils.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://visionzone.tv/installation-facile-rapide.html">
+  <meta property="og:image" content="https://visionzone.tv/imgs/visionzone.png">
+  <meta property="og:site_name" content="VisionZone">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Installation VisionZone en 7 Étapes">
+  <meta name="twitter:description" content="Guide complet d'installation VisionZone en 7 étapes détaillées pour tous vos appareils.">
+  <meta name="twitter:image" content="https://visionzone.tv/imgs/visionzone.png">
+  <link rel="canonical" href="https://visionzone.tv/installation-facile-rapide.html">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="./style.css">
+  
+  <style>
+    .installation-page {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #0f0f0f 100%);
+      position: relative;
+      overflow-x: hidden;
+    }
+    
+    .installation-bg-pattern {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: 
+        radial-gradient(circle at 20% 20%, rgba(229, 9, 20, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(229, 9, 20, 0.02) 0%, transparent 50%),
+        radial-gradient(circle at 40% 60%, rgba(229, 9, 20, 0.01) 0%, transparent 50%);
+      pointer-events: none;
+    }
+    
+    .installation-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 120px 20px 60px;
+      position: relative;
+      z-index: 2;
+    }
+    
+    .installation-header {
+      text-align: center;
+      margin-bottom: 80px;
+    }
+    
+    .installation-title {
+      font-size: 2.3rem;
+      color: #fff;
+      margin-bottom: 25px;
+      font-weight: 800;
+      letter-spacing: -2px;
+      background: linear-gradient(135deg, #fff 0%, #e50914 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .installation-subtitle {
+      font-size: 1.3rem;
+      color: #bbb;
+      max-width: 900px;
+      margin: 0 auto 35px;
+      line-height: 1.7;
+    }
+    
+    .installation-highlight {
+      background: linear-gradient(135deg, rgba(229, 9, 20, 0.15) 0%, rgba(229, 9, 20, 0.05) 100%);
+      color: #e50914;
+      padding: 18px 35px;
+      border-radius: 30px;
+      display: inline-block;
+      font-weight: 700;
+      border: 2px solid rgba(229, 9, 20, 0.3);
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    
+    .installation-steps {
+      margin-bottom: 60px;
+    }
+    
+    .step {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 80px;
+      align-items: start;
+      margin-bottom: 90px;
+      padding: 0;
+    }
+    
+    .step-image {
+      position: relative;
+    }
+    
+    .step-image img {
+      max-width: 500px;
+      max-height: 350px;
+      width: auto;
+      height: auto;
+      /* Amélioration de la qualité visuelle */
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: crisp-edges;
+      filter: brightness(1.05) contrast(1.1) saturate(1.05) sharpen(1px);
+      -webkit-filter: brightness(1.05) contrast(1.1) saturate(1.05);
+      /* Anti-aliasing pour des contours plus nets */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      /* Amélioration du rendu */
+      backface-visibility: hidden;
+      transform: translateZ(0);
+    }
+    
+
+    
+    .step-content {
+      padding: 0;
+      margin-top: -45px;
+    }
+    
+    .step-number {
+      background: linear-gradient(135deg, #e50914 0%, #b71c1c 100%);
+      color: white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 900;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 15px rgba(229, 9, 20, 0.3);
+    }
+    
+    .step-title {
+      font-size: 2rem;
+      color: #fff;
+      margin-bottom: 15px;
+      font-weight: 700;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+    }
+    
+    .step-description {
+      color: #ddd;
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+    
+    .step-details {
+      color: #e50914;
+      font-size: 1rem;
+      font-weight: 600;
+      font-style: italic;
+    }
+
+    /* Style pour le lien "Voir nos offres" */
+    .step-details a:hover {
+      background: rgba(229, 9, 20, 0.2) !important;
+      border-color: rgba(229, 9, 20, 0.5) !important;
+      transform: translateY(-1px);
+    }
+
+    /* Remontée spécifique pour l'étape 5 */
+    .step:nth-child(5) .step-content {
+      margin-top: -55px;
+    }
+    
+          @media (max-width: 768px) {
+        .installation-title {
+          font-size: 2rem;
+          letter-spacing: -1px;
+        }
+        
+        .installation-subtitle {
+          font-size: 1.1rem;
+        }
+        
+        .step {
+          grid-template-columns: 1fr !important;
+          text-align: center;
+          gap: 30px;
+          margin-bottom: 50px;
+        }
+        
+        .step-image {
+          width: 100%;
+          max-width: 350px;
+          margin: 0 auto;
+        }
+        
+        .step-image img {
+          max-width: 350px;
+          max-height: 250px;
+        }
+        
+        .step-content {
+          margin-top: -20px !important;
+        }
+        
+        .step:nth-child(5) .step-content {
+          margin-top: -25px !important;
+        }
+        
+        .step-title {
+          font-size: 1.6rem;
+        }
+        
+        .step-description {
+          font-size: 1rem;
+        }
+      }
+    
+    @media (max-width: 480px) {
+      .installation-container {
+        padding: 100px 10px 40px;
+      }
+      
+      .installation-title {
+        font-size: 1.8rem;
+      }
+      
+      .installation-subtitle {
+        font-size: 1rem;
+      }
+      
+      .step {
+        margin-bottom: 35px;
+        gap: 20px;
+      }
+      
+      .step-image {
+        max-width: 300px;
+      }
+      
+      .step-image img {
+        max-width: 300px;
+        max-height: 200px;
+      }
+      
+      .step-title {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+      }
+      
+      .step-description {
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+      
+      .step-details {
+        font-size: 0.9rem;
+      }
+      
+      .step-details a {
+        padding: 3px 6px !important;
+        font-size: 0.85rem !important;
+      }
+      
+      .personalization-section {
+        padding: 20px !important;
+        margin-top: 30px !important;
+      }
+      
+      .personalization-section h3 {
+        font-size: 1.4rem !important;
+      }
+      
+      .personalization-section p {
+        font-size: 0.95rem !important;
+      }
+      
+      .personalization-section a[style*="background"] {
+        padding: 6px 12px !important;
+        font-size: 0.9rem !important;
+      }
+    }
+    
+    @media (max-width: 320px) {
+      .installation-title {
+        font-size: 1.6rem;
+      }
+      
+      .step-image img {
+        max-width: 280px;
+        max-height: 180px;
+      }
+      
+      .step-title {
+        font-size: 1.2rem;
+      }
+      
+      .personalization-section {
+        padding: 15px !important;
+      }
+      
+      .personalization-section h3 {
+        font-size: 1.2rem !important;
+      }
+      
+      .personalization-section p {
+        font-size: 0.9rem !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="nf-floating-header">
+    <div class="nf-floating-left">
+      <a href="index.html" style="text-decoration: none;">
+        <img src="../imgs/visionzone.png" alt="VisionZone Logo" class="nf-logo-img" style="height: 70px; margin-right: 12px; margin-top: -2px;">
+      </a>
+      <span id="slogan" class="premium-slogan" style="font-size:0.98rem; margin-left:-10px; margin-top:33px; display:inline-block; vertical-align: middle;">Installation facile et rapide</span>
+    </div>
+    <div class="nf-floating-header-bg"></div>
+    
+    <!-- Menu burger pour mobile -->
+    <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+      <div class="burger-icon">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+      </div>
+    </button>
+    
+    <!-- Menu déroulant mobile -->
+    <div class="mobile-menu-dropdown" id="mobile-menu-dropdown">
+      <a href="index.html" class="mobile-menu-item">
+        <img src="../imgs/accueil.png" alt="Accueil">
+        Accueil
+      </a>
+      <a href="infos.html" class="mobile-menu-item">
+        <img src="../imgs/infos.png" alt="Infos">
+        Informations
+      </a>
+      <a href="index.html#offers-section" class="mobile-menu-item">
+        <img src="../imgs/nosoffres.png" alt="Nos offres">
+        Nos Offres
+      </a>
+      <a href="contact.html" class="mobile-menu-item">
+        <img src="../imgs/contact.png" alt="Contact">
+        Contact
+      </a>
+      <a href="faq.html" class="mobile-menu-item">
+        <img src="../imgs/faq.png" alt="FAQ">
+        FAQ
+      </a>
+    </div>
+    
+    <!-- Menu desktop -->
+    <div class="nf-floating-right">
+      <a href="index.html" class="nf-btn-home-img"><img src="../imgs/accueil.png" alt="Accueil" style="height:90px;width:90px;object-fit:contain;"></a>
+      <a href="infos.html" class="nf-btn-infos-img"><img src="../imgs/infos.png" alt="Infos" style="height:70px;width:70px;object-fit:contain;"></a>
+      <a href="index.html#offers-section" class="nf-btn-offers-img"><img src="../imgs/nosoffres.png" alt="Nos offres" style="height:130px;width:130px;object-fit:contain;"></a>
+      <a href="contact.html" class="nf-btn-contact-img"><img src="../imgs/contact.png" alt="Contact" style="height:90px;width:90px;object-fit:contain;"></a>
+      <a href="faq.html" class="nf-btn-faq-img"><img src="../imgs/faq.png" alt="FAQ" style="height:60px;width:60px;object-fit:contain;"></a>
+    </div>
+  </div>
+
+  <a href="infos.html" class="faq-back-arrow" aria-label="Retour aux informations">
+    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="19" cy="19" r="19" fill="rgba(229,9,20,0.13)"/>
+      <path d="M23 11L15 19L23 27" stroke="#E50914" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+
+  <div class="installation-page">
+    <div class="installation-bg-pattern"></div>
+    
+    <div class="installation-container">
+      <!-- En-tête -->
+      <div class="installation-header">
+        <h1 class="installation-title">Installation IPTV Smarters Pro APK</h1>
+        <p class="installation-subtitle">
+          Suivez notre guide détaillé en 7 étapes pour installer <strong>IPTV Smarters Pro</strong> sur votre appareil préféré. 
+          Une installation simple et rapide qui vous donnera accès à tout l'univers VisionZone en quelques minutes.
+        </p>
+
+      </div>
+
+      <!-- 7 Étapes d'installation -->
+      <div class="installation-steps">
+        <!-- Étape 1 -->
+        <div class="step">
+          <div class="step-image">
+            <img src="../imgs/installations/etape1.webp" alt="Étape 1 - Téléchargement de l'application">
+          </div>
+          <div class="step-content">
+            <h3 class="step-title">Téléchargement de l'application Downloader</h3>
+            <p class="step-description">
+              Rendez-vous sur le store de votre appareil (Google Play Store, Amazon Appstore) 
+              et recherchez "Downloader". Téléchargez et installez l'application officielle.
+            </p>
+            <p class="step-details">
+              Application gratuite disponible sur tous les stores
+            </p>
+          </div>
+        </div>
+
+        <!-- Étape 2 -->
+        <div class="step">
+          <div class="step-image">
+            <img src="../imgs/installations/etape2.webp" alt="Étape 2 - Ouverture de l'application">
+          </div>
+          <div class="step-content">
+            <h3 class="step-title">Autorisation des sources inconnues</h3>
+            <p class="step-description">
+              Avant de pouvoir télécharger des applications, vous devez autoriser les téléchargements de sources inconnues. 
+              Allez dans <strong>Paramètres > Sécurité > Sources inconnues</strong> et activez l'option.
+              <br><br>
+              <strong>Note :</strong> Parfois il faut d'abord activer le mode développeur. Pour cela, allez dans 
+              <strong>Paramètres > À propos de l'appareil > Numéro de build</strong> et appuyez 7 fois rapidement dessus.
+            </p>
+            <p class="step-details">
+              Étape nécessaire pour installer des applications externes
+            </p>
+          </div>
+        </div>
+
+        <!-- Étape 3 -->
+        <div class="step">
+          <div class="step-image">
+            <img src="../imgs/installations/etape3.webp" alt="Étape 3 - Sélection du type de connexion">
+          </div>
+          <div class="step-content">
+            <h3 class="step-title">Télécharger IPTV Smarters Pro Apk </h3>
+            <p class="step-description">
+              Ouvrez l'application <strong>Downloader</strong> que vous venez d'installer. Dans le champ de saisie, 
+              entrez le code <strong>164547</strong> puis appuyez sur <strong>GO</strong>. 
+              Le téléchargement d'IPTV Smarters Pro se lancera automatiquement.
+            </p>
+            <p class="step-details">
+              Suivez les étapes, acceptez les conditions puis cliquez sur "Installer"
+            </p>
+          </div>
+        </div>
+
+        <!-- Étape 4 -->
+        <div class="step">
+          <div class="step-image">
+            <img src="../imgs/installations/etape4.webp" alt="Étape 4 - Saisie des informations de connexion">
+          </div>
+          <div class="step-content">
+            <h3 class="step-title">Configurer l'application</h3>
+            <p class="step-description">
+              Lancez <strong>IPTV Smarters Pro</strong> depuis votre écran d'accueil. L'application va s'ouvrir et vous présenter plusieurs options de connexion. 
+              Sélectionnez <strong>"Login with Xtream Codes API"</strong> (option recommandée) pour bénéficier de la meilleure expérience avec <a href="index.html" style="color: #e50914; text-decoration: none; font-weight: 700;">VisionZone</a>.
+            </p>
+            <p class="step-details">
+              Méthode de connexion optimale pour VisionZone
+            </p>
+          </div>
+        </div>
+
+        <!-- Étape 5 -->
+        <div class="step">
+          <div class="step-image">
+            <img src="../imgs/installations/etape5.webp" alt="Étape 5 - Validation et connexion">
+          </div>
+          <div class="step-content">
+            <h3 class="step-title">Saisie des informations de connexion</h3>
+            <p class="step-description">
+              Vous arrivez maintenant sur l'écran de saisie des identifiants. Entrez les informations de connexion fournies avec votre abonnement <a href="index.html" style="color: #e50914; text-decoration: none; font-weight: 700;">VisionZone</a> : 
+              <strong>nom d'utilisateur</strong>, <strong>mot de passe</strong> et <strong>URL du serveur</strong>. Vérifiez bien chaque information avant de continuer.
+              <br><br>
+              Une fois tous les champs remplis, appuyez sur <strong>"Add User"</strong> pour valider vos informations. L'application va se connecter aux serveurs VisionZone et vérifier vos identifiants.
+            </p>
+            <p class="step-details">
+              Identifiants reçus par email après votre commande - <a href="index.html#offers-section" style="color: #e50914; text-decoration: none; font-weight: 600; background: rgba(229, 9, 20, 0.1); padding: 4px 8px; border-radius: 4px; border: 1px solid rgba(229, 9, 20, 0.3); transition: all 0.3s ease;">Voir nos offres →</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Étape 6 -->
+        <div class="step">
+          <div class="step-image">
+            <img src="../imgs/installations/etape7.webp" alt="Étape 6 - Chargement des chaînes">
+          </div>
+          <div class="step-content">
+            <h3 class="step-title">Profitez de VisionZone !</h3>
+            <p class="step-description">
+              Félicitations ! L'installation est terminée avec succès. Vous pouvez maintenant naviguer dans l'interface et profiter de tous vos contenus <a href="index.html" style="color: #e50914; text-decoration: none; font-weight: 700;">VisionZone</a>. 
+              Explorez les chaînes TV, films, séries et fonctionnalités avancées.
+            </p>
+            <p class="step-details">
+              Installation terminée - Accès complet à VisionZone
+            </p>
+          </div>
+        </div>
+
+        <!-- Étape 7 -->
+        <div class="step">
+          <div class="step-image">
+            <img src="../imgs/installations/etape6.webp" alt="Étape 7 - Installation terminée">
+          </div>
+          <div class="step-content">
+            <h3 class="step-title">Configuration avancée et contrôle parental</h3>
+            <p class="step-description">
+              Une fois le chargement terminé, vous pouvez accéder aux paramètres avancés. Parfois, pour accéder au menu des paramètres, 
+              il faut s'enregistrer via le lien d'enregistrement en entrant votre adresse email. 
+              <br><br>
+              Dans les paramètres, vous pouvez configurer le <strong>contrôle parental</strong> pour masquer certaines chaînes de l'interface. 
+              Allez dans <strong>Paramètres > Contrôle parental</strong> et activez les filtres selon vos préférences.
+            </p>
+            <p class="step-details">
+              Configuration personnalisée pour une expérience adaptée
+            </p>
+          </div>
+        </div>
+
+        <!-- Section personnalisation VisionZone -->
+        <div class="personalization-section" style="background: rgba(80, 40, 40, 0.6); border: 1px solid rgba(200, 80, 80, 0.8); border-radius: 4px; padding: 30px; margin-top: 50px; text-align: center;">
+          <h3 style="color: #fff; font-size: 1.8rem; margin-bottom: 20px; font-weight: 700; text-shadow: 1px 1px 2px rgba(0,0,0,0.5);">
+            Contenu personnalisé selon vos besoins
+          </h3>
+          <p style="color: #ddd; font-size: 1.1rem; line-height: 1.7; margin-bottom: 15px;">
+            Chaque utilisateur <a href="index.html" style="color: #e50914; text-decoration: none; font-weight: 700;">VisionZone</a> a son contenu adapté à ses besoins. 
+            Il est possible de modifier et adapter selon vos préférences personnelles.
+          </p>
+          <p style="color: #ddd; font-size: 1.1rem; line-height: 1.7; margin-bottom: 15px;">
+            <strong style="color: #fff;">Exemple :</strong> Vous n'avez pas l'utilité d'avoir toutes les chaînes internationales ? 
+            Contactez-nous via notre <a href="contact.html" style="color: #e50914; text-decoration: none; font-weight: 600;">formulaire de contact</a> 
+            en sélectionnant la rubrique <strong style="color: #fff;">"Modifier votre contenu"</strong> et nous personnalisons ensemble vos chaînes.
+          </p>
+          <p style="color: #ddd; font-size: 1.1rem; line-height: 1.7; margin-bottom: 15px;">
+            <strong style="color: #fff;">Avantages :</strong> Temps de chargement réduits à néant, 
+            rapidité et fiabilité augmentées grâce à un contenu optimisé pour vous.
+          </p>
+          <p style="color: #e50914; font-size: 1.1rem; font-weight: 700; text-align: center; margin-top: 20px;">
+            Alors n'hésitez pas à <a href="contact.html" style="color: #fff; text-decoration: none; background: #e50914; padding: 8px 16px; border-radius: 4px;">nous contacter</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/main.js"></script>
+  
+  <!-- Script pour le menu burger -->
+  <script>
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenuDropdown = document.getElementById('mobile-menu-dropdown');
+    
+    if (mobileMenuToggle && mobileMenuDropdown) {
+      mobileMenuToggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        mobileMenuToggle.classList.toggle('active');
+        mobileMenuDropdown.classList.toggle('active');
+      });
+      
+      document.addEventListener('click', function(event) {
+        if (!mobileMenuToggle.contains(event.target) && !mobileMenuDropdown.contains(event.target)) {
+          mobileMenuToggle.classList.remove('active');
+          mobileMenuDropdown.classList.remove('active');
+        }
+      });
+      
+      const mobileMenuItems = document.querySelectorAll('.mobile-menu-item');
+      mobileMenuItems.forEach(item => {
+        item.addEventListener('click', function() {
+          if (this.getAttribute('href')) {
+            mobileMenuToggle.classList.remove('active');
+            mobileMenuDropdown.classList.remove('active');
+          }
+        });
+      });
+    }
+    
+
+  </script>
+
+  <!-- FOOTER PREMIUM -->
+  <footer class="premium-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="../imgs/visionzone.png" alt="VisionZone Logo" style="height: 80px; width: auto;">
+        </div>
+        <p class="footer-tagline">Guide d'installation complet pour profiter de la meilleure expérience VisionZone sur tous vos appareils.</p>
+      </div>
+      
+      <div class="footer-section">
+        <h3 class="footer-title">Services</h3>
+        <div class="footer-links">
+          <a href="offre-3mois.html" class="footer-link">Formule Découverte</a>
+          <a href="offre-6mois.html" class="footer-link">Formule Équilibre</a>
+          <a href="offre-12mois.html" class="footer-link">Formule Passion</a>
+          <a href="infos.html" class="footer-link">Informations</a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3 class="footer-title">Support</h3>
+        <div class="footer-links">
+          <a href="contact.html" class="footer-link">Contact</a>
+          <a href="faq.html" class="footer-link">FAQ</a>
+          <a href="installation-facile-rapide.html" class="footer-link">Guide installation Pro</a>
+          <a href="installation-smarters-lite.html" class="footer-link">Guide installation Simple</a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3 class="footer-title">Légal</h3>
+        <div class="footer-links">
+          <a href="confidentialite.html" class="footer-link">Politique de confidentialité</a>
+          <a href="conditions.html" class="footer-link">Conditions d'utilisation</a>
+          <a href="cookies.html" class="footer-link">Gestion des cookies</a>
+          <a href="mentions-legales.html" class="footer-link">Mentions légales</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-container">
+      <div class="footer-bottom">
+        <div class="footer-copyright">© 2024 VisionZone. Tous droits réservés.</div>
+        <div class="footer-legal">
+          <a href="confidentialite.html" class="footer-legal-link">Confidentialité</a>
+          <a href="conditions.html" class="footer-legal-link">Conditions</a>
+          <a href="cookies.html" class="footer-legal-link">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
