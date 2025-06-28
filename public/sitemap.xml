@@ -2,31 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://visionzone.tv/</loc>
-    <lastmod>2024-03-20</lastmod>
+    <lastmod>2024-12-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://visionzone.tv/faq.html</loc>
-    <lastmod>2024-03-20</lastmod>
+    <lastmod>2024-12-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://visionzone.tv/offre-3mois.html</loc>
-    <lastmod>2024-03-20</lastmod>
+    <lastmod>2024-12-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://visionzone.tv/offre-6mois.html</loc>
-    <lastmod>2024-03-20</lastmod>
+    <lastmod>2024-12-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://visionzone.tv/offre-12mois.html</loc>
-    <lastmod>2024-03-20</lastmod>
+    <lastmod>2024-12-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -37,10 +37,28 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://visionzone.tv/infos.html</loc>
+    <loc>https://visionzone.tv/astuces-infos.html</loc>
     <lastmod>2024-12-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://visionzone.tv/qui-sommes-nous.html</loc>
+    <lastmod>2024-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://visionzone.tv/installation-facile-rapide.html</loc>
+    <lastmod>2024-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://visionzone.tv/installation-player-lite.html</loc>
+    <lastmod>2024-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://visionzone.tv/confidentialite.html</loc>
@@ -48,9 +66,20 @@
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
-  
   <url>
     <loc>https://visionzone.tv/conditions.html</loc>
+    <lastmod>2024-12-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://visionzone.tv/cookies.html</loc>
+    <lastmod>2024-12-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://visionzone.tv/mentions-legales.html</loc>
     <lastmod>2024-12-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qui sommes-nous ? | VisionZone</title>
+  <meta name="description" content="Découvrez l'histoire immersive et inspirante du fondateur de VisionZone, de ses débuts de hacker passionné à la création d'une plateforme accessible à tous.">
+  <link rel="canonical" href="https://visionzone.tv/qui-sommes-nous.html">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #fff;
+      min-height: 100vh;
+      height: 100%;
+      position: relative;
+      background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+    }
+    .about-section {
+      min-height: 100vh;
+      padding: 120px 0 60px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .about-section-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100%;
+      background-image: 
+        radial-gradient(circle at 20% 20%, rgba(229, 9, 20, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255, 77, 0, 0.1) 0%, transparent 50%);
+      z-index: 0;
+      pointer-events: none;
+    }
+    .about-container {
+      max-width: 820px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+      padding: 120px 20px 60px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-sizing: border-box;
+    }
+    .about-content {
+      width: 100%;
+      max-width: 950px;
+      background: none;
+      border-radius: 0;
+      box-shadow: none;
+      padding: 0 10px;
+      font-size: 1.18rem;
+      line-height: 1.7;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      color: #111;
+      box-sizing: border-box;
+      text-align: left;
+    }
+    .about-content h1 {
+      color: #e50914;
+      font-size: 2.1rem;
+      font-weight: 700;
+      margin-bottom: 36px;
+      text-align: left;
+      letter-spacing: -1px;
+      border-bottom: 1.5px solid rgba(229,9,20,0.1);
+      padding-bottom: 18px;
+    }
+    .about-content h2 {
+      color: #e50914;
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-top: 38px;
+      margin-bottom: 18px;
+      letter-spacing: -0.5px;
+    }
+    .about-content p {
+      margin-bottom: 1.7em;
+      text-align: left;
+    }
+    .about-content b, .about-content strong {
+      color: #e50914;
+      font-weight: 700;
+    }
+    .about-signature {
+      margin-top: 2.5em;
+      text-align: right;
+      font-family: 'Great Vibes', cursive;
+      color: #e50914;
+      font-size: 1.2rem;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+    }
+    .about-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      justify-content: flex-end;
+      margin-top: 38px;
+    }
+    .about-cta a {
+      background: linear-gradient(45deg, #e50914, #ff4d00);
+      color: #fff;
+      border-radius: 22px;
+      padding: 13px 32px;
+      font-size: 1.08rem;
+      font-family: inherit;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+      box-shadow: 0 2px 8px rgba(229,9,20,0.13);
+      border: none;
+      outline: none;
+      margin-top: 10px;
+    }
+    .about-cta a:hover {
+      background: linear-gradient(45deg, #ff4d00, #e50914);
+      color: #fff;
+      transform: translateY(-2px) scale(1.03);
+      box-shadow: 0 5px 20px rgba(229, 9, 20, 0.3);
+    }
+    @media (max-width: 900px) {
+      .about-container { padding: 100px 4vw 40px 4vw; }
+      .about-content { padding: 32px 10px 24px 10px; font-size: 1.01rem; }
+      .about-container h1 { font-size: 1.4rem; }
+    }
+    @media (max-width: 700px) {
+      .about-content {
+        font-size: 1.08rem;
+        max-width: 99vw;
+        padding: 0 2vw;
+      }
+    }
+    .credits-container {
+      width: 100vw;
+      min-height: 100vh;
+      overflow: visible;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
+      pointer-events: auto;
+    }
+    .credits-text {
+      max-width: 1300px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 10px;
+      padding-right: 10px;
+      width: 100%;
+      text-align: center;
+      color: #f5f5f5;
+      background: none;
+      font-size: 1.19rem;
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-weight: 500;
+      line-height: 1.7;
+      letter-spacing: 0.01em;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.13);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      pointer-events: auto;
+    }
+    .credits-text h1, .credits-text h2 {
+      color: #e50914;
+      margin-top: 0.7em;
+      margin-bottom: 0.7em;
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -1px;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.45);
+    }
+    .credits-text b, .credits-text strong {
+      color: #e50914;
+      font-weight: 700;
+    }
+    .about-signature {
+      margin-top: 2.5em;
+      text-align: right;
+      font-family: 'Great Vibes', cursive;
+      color: #e50914;
+      font-size: 1.2rem;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.45);
+    }
+    .credits-text p {
+      margin-bottom: 2.3em;
+    }
+  </style>
+</head>
+<body>
+  <div class="nf-floating-header">
+    <div class="nf-floating-left">
+      <img src="./imgs/visionzone.png" alt="VisionZone Logo" class="nf-logo-img" style="height: 95px; margin-right: 12px; margin-top: -2px;">
+      <span id="slogan" class="premium-slogan" style="font-size:0.98rem; margin-left:-10px; margin-top:33px; display:inline-block; vertical-align: middle;">L'excellence du divertissement à domicile, enfin accessible.</span>
+    </div>
+    <div class="nf-floating-header-bg"></div>
+    <!-- Menu burger pour mobile -->
+    <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+      <div class="burger-icon">
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+        <div class="burger-line"></div>
+      </div>
+    </button>
+    <!-- Menu déroulant mobile -->
+    <div class="mobile-menu-dropdown" id="mobile-menu-dropdown">
+      <a href="index.html" class="mobile-menu-item">
+        <img src="./imgs/accueil.png" alt="Accueil">
+        Accueil
+      </a>
+      <a href="astuces-infos.html" class="mobile-menu-item">
+        <img src="./imgs/infos.png" alt="Infos">
+        Informations
+      </a>
+      <a href="#offers-section" class="mobile-menu-item">
+        <img src="./imgs/nosoffres.png" alt="Nos offres">
+        Nos Offres
+      </a>
+      <a href="contact.html" class="mobile-menu-item">
+        <img src="./imgs/contact.png" alt="Contact">
+        Contact
+      </a>
+      <a href="faq.html" class="mobile-menu-item">
+        <img src="./imgs/faq.png" alt="FAQ">
+        FAQ
+      </a>
+      <div style="border-top: 1px solid rgba(255,255,255,0.1); padding: 15px 20px;">
+        <div style="display: flex; gap: 15px; justify-content: center; align-items: center;">
+          <button class="mobile-lang-btn active" data-lang="fr" style="background: none; border: 2px solid #e50914; color: #e50914; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 0.9rem; font-weight: bold; transition: all 0.3s ease;">
+            FR
+          </button>
+          <button class="mobile-lang-btn" data-lang="en" style="background: none; border: 2px solid rgba(255,255,255,0.3); color: rgba(255,255,255,0.7); padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 0.9rem; font-weight: bold; transition: all 0.3s ease;">
+            EN
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Menu desktop (caché sur mobile) -->
+    <div class="nf-floating-right">
+      <a href="index.html" id="menu-home" class="nf-btn-home-img" style="display:inline-block;"><img src="./imgs/accueil.png" alt="Accueil" style="height:90px;width:90px;object-fit:contain;vertical-align:middle;"></a>
+      <a href="astuces-infos.html" id="menu-infos" class="nf-btn-infos-img" style="display:inline-block;"><img src="./imgs/infos.png" alt="Infos" style="height:70px;width:70px;object-fit:contain;vertical-align:middle;"></a>
+      <a href="#offers-section" id="menu-offers" class="nf-btn-offers-img" style="display:inline-block;"><img src="./imgs/nosoffres.png" alt="Nos offres" style="height:130px;width:130px;object-fit:contain;vertical-align:middle;"></a>
+      <a href="contact.html" id="menu-contact" class="nf-btn-contact-img" style="display:inline-block;"><img src="./imgs/contact.png" alt="Contact" style="height:90px;width:90px;object-fit:contain;vertical-align:middle;"></a>
+      <div class="nf-lang-select-wrapper" style="position: relative; z-index: 102;">
+        <img src="./imgs/FR.png" alt="Français" id="lang-btn-img" style="height:45px;width:45px;object-fit:contain;vertical-align:middle;cursor:pointer;">
+        <div id="lang-dropdown" class="lang-dropdown" style="display:none; position:absolute; top:60px; left:0; background:#181818; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.18); min-width:120px; z-index:103;">
+          <div class="lang-option" data-lang="fr" style="padding:12px 22px; color:#fff; cursor:pointer;">Français</div>
+          <div class="lang-option" data-lang="en" style="padding:12px 22px; color:#fff; cursor:pointer;">English</div>
+        </div>
+      </div>
+      <a href="faq.html" id="menu-faq" class="nf-btn-faq-img" style="display:inline-block;"><img src="./imgs/faq.png" alt="FAQ" style="height:60px;width:60px;object-fit:contain;vertical-align:middle;"></a>
+    </div>
+  </div>
+  <div class="about-section">
+    <div class="about-section-bg"></div>
+    <div class="credits-container">
+      <div class="credits-text">
+        <h1>Qui sommes-nous&nbsp;?</h1>
+        <p><b>Bienvenue dans l'histoire de VisionZone.</b></p>
+        <p>Il y a des histoires qui commencent dans le tumulte d'une grande ville, d'autres dans le silence d'une chambre d'ado, éclairée par la lueur bleutée d'un écran. La mienne appartient à la seconde catégorie. J'avais douze ans, l'âge où l'on rêve d'aventure, mais mes aventures à moi se vivaient en ligne, sur les forums obscurs, les premiers chats IRC, les sites à l'ancienne où chaque clic était une découverte.</p>
+        <p>Je me souviens encore du cliquetis du clavier, du ronronnement de l'ordinateur familial, de la lumière dorée du matin qui filtrait à travers les volets alors que je n'avais pas dormi. Très tôt, j'ai été happé par le monde du <b>hacking</b>. Non pas pour détruire, mais pour comprendre. Un soir, j'ai réussi à contourner le mot de passe du vieux PC de mon père : ce n'était rien, mais j'ai ressenti une fierté immense, comme si j'avais percé un secret de l'univers.</p>
+        <p>J'adorais démonter, explorer, contourner, créer des petits logiciels qui faisaient sourire mes amis. Parfois, je partageais mes trouvailles sur des forums, et un inconnu me répondait "Bravo !" : c'était comme recevoir une médaille. Je me souviens de ces nuits blanches, où le temps semblait suspendu, où la fatigue disparaissait devant la satisfaction de "craquer" un problème, de trouver une faille, de repousser les limites.</p>
+        <p>Les années ont passé, la passion est restée. J'ai appris, j'ai échoué, j'ai recommencé. J'ai élargi mes horizons, du hacking éthique au développement web, de la création de petits outils à la conception de sites pour des amis, puis pour des clients. J'ai connu la joie du premier site mis en ligne, la frustration des bugs incompréhensibles, la peur de tout perdre après une mauvaise manipulation. Mais toujours, une question me hantait : "Comment rendre tout ça plus simple, plus humain, plus accessible ?"</p>
+        <h2>Une histoire de partage et d'entraide</h2>
+        <p>Au fil de ce parcours, j'ai eu la chance de croiser la route de nombreux développeurs, créateurs et passionnés. J'ai souvent été celui qu'on appelait à l'aide pour débloquer une idée, optimiser un code, ou donner vie à un projet qui semblait impossible. J'ai contribué, parfois dans l'ombre, à la conception de logiciels qui ont marqué leur époque : de l'accompagnement technique sur des outils devenus incontournables comme Cheat Engine, à la participation en profondeur à la création de l'application IPTV Smarters Pro dans sa version la plus avancée.</p>
+        <p>Voir ces projets grandir, inspirer d'autres développeurs, faciliter la vie de milliers d'utilisateurs, a toujours été une immense fierté. VisionZone, ce n'est pas qu'un site : c'est aussi une histoire de transmission, de partage de savoir, d'entraide entre passionnés.</p>
+        <h2>VisionZone aujourd'hui</h2>
+        <p>C'est cette question qui a guidé toute ma vie d'adulte. J'ai vu trop de gens galérer avec la technologie, se sentir exclus, perdus, ou arnaqués. J'ai repensé à ma mère, qui n'osait jamais cliquer de peur de "tout casser", à mon meilleur ami qui m'appelait à l'aide dès qu'un message d'erreur s'affichait. J'ai voulu créer un pont, une passerelle entre le monde des passionnés et celui du grand public. J'ai voulu prouver qu'on pouvait allier <b>innovation</b> et <b>bienveillance</b>, <b>performance</b> et <b>simplicité</b>.</p>
+        <p>Ainsi est née l'idée de <b>VisionZone</b>. Pas dans un open space branché, mais dans la chaleur d'un salon, entre deux cafés, mille lignes de code, et des discussions sans fin avec d'autres passionnés. Je revois encore la première version du site, imparfaite, bricolée, mais déjà animée par cette envie de partager. VisionZone, c'est l'aboutissement d'années de veille, d'essais, d'erreurs, de nuits blanches et de rencontres. C'est une plateforme pensée pour tous : les technophiles, les familles, les curieux, les novices, ceux qui veulent juste profiter du meilleur du contenu, sans prise de tête, sans se ruiner.</p>
+        <p>Aujourd'hui, VisionZone, c'est une communauté vivante, un support humain, des guides clairs, des offres pour tous les goûts, et surtout une promesse : <b>rendre le streaming accessible à tous</b>, sans compromis sur la qualité, la sécurité ou l'expérience.</p>
+        <p>Si tu lis ces lignes, c'est que toi aussi tu es curieux, passionné, ou simplement à la recherche d'une expérience différente. Prends le temps de parcourir nos guides, de découvrir nos offres, de poser tes questions. Peut-être que, comme moi, tu as déjà ressenti ce mélange d'excitation et d'appréhension devant un écran. Chez VisionZone, chaque histoire compte, et la tienne est la bienvenue.</p>
+        <div class="about-signature">— Mickael, fondateur de VisionZone</div>
+      </div>
+    </div>
+  </div>
+  <footer class="premium-footer">
+    <div class="footer-container">
+      <!-- Colonne Marque -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="./imgs/visionzone.png" alt="VisionZone Logo" style="height: 80px; width: auto;">
+        </div>
+        <p class="footer-tagline" id="footer-tagline">L'excellence du divertissement à domicile. Plus de 50 000 familles nous font confiance pour transformer leur expérience TV quotidienne.</p>
+      </div>
+      <!-- Colonne Services -->
+      <div class="footer-section">
+        <h3 class="footer-title" id="footer-services-title">Services</h3>
+        <div class="footer-links">
+          <a href="offre-3mois.html" class="footer-link" id="footer-link-discovery">Formule Découverte</a>
+          <a href="offre-6mois.html" class="footer-link" id="footer-link-balance">Formule Équilibre</a>
+          <a href="offre-12mois.html" class="footer-link" id="footer-link-passion">Formule Passion</a>
+          <a href="astuces-infos.html" class="footer-link" id="footer-link-info">Informations</a>
+        </div>
+      </div>
+      <!-- Colonne Support -->
+      <div class="footer-section">
+        <h3 class="footer-title" id="footer-support-title">Support</h3>
+        <div class="footer-links">
+          <a href="contact.html" class="footer-link" id="footer-link-contact">Contact</a>
+          <a href="faq.html" class="footer-link" id="footer-link-faq">FAQ</a>
+          <a href="installation-facile-rapide.html" class="footer-link">Guide installation Pro</a>
+          <a href="qui-sommes-nous.html" class="footer-link">Notre histoire &amp; nos valeurs</a>
+        </div>
+      </div>
+      <!-- Colonne Légal -->
+      <div class="footer-section">
+        <h3 class="footer-title" id="footer-legal-title">Légal</h3>
+        <div class="footer-links">
+          <a href="confidentialite.html" class="footer-link" id="footer-link-privacy">Politique de confidentialité</a>
+          <a href="conditions.html" class="footer-link" id="footer-link-terms">Conditions d'utilisation</a>
+          <a href="cookies.html" class="footer-link" id="footer-link-cookies">Gestion des cookies</a>
+          <a href="mentions-legales.html" class="footer-link" id="footer-link-mentions">Mentions légales</a>
+        </div>
+      </div>
+    </div>
+    <!-- Bas du footer -->
+    <div class="footer-container">
+      <div class="footer-bottom">
+        <div class="footer-copyright" id="footer-copyright">
+          © 2024 VisionZone. Tous droits réservés.
+        </div>
+        <div class="footer-social" style="gap:10px;">
+          <a href="https://www.facebook.com/groups/1740808673190199?locale=fr_FR" target="_blank" rel="noopener" title="Facebook VisionZone">
+            <img src="./imgs/facebook.png" alt="Facebook" style="width:28px;height:28px;object-fit:contain;vertical-align:middle;">
+          </a>
+          <a href="https://www.snapchat.com/add/dyuka.953" target="_blank" rel="noopener" title="Snapchat dyuka.953">
+            <img src="./imgs/snap.png" alt="Snapchat" style="width:28px;height:28px;object-fit:contain;vertical-align:middle;">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
