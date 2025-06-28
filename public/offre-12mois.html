@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Offre Passion 12 mois VisionZone - 29,99€ | Maximum d'Économies sur l'Année</title>
-  <meta name="description" content="Notre offre Passion 12 mois à 29,99€ - Pour les vrais passionnés ! Économies maximales, streaming 4K HDR, la solution la plus complète de VisionZone.">
+  <title>Abonnement IPTV 12 mois – VisionZone, l'offre la plus complète du marché</title>
+  <meta name="description" content="Profitez de l'offre Passion : 12 mois d'abonnement IPTV VisionZone, le meilleur du direct TV, films et séries à prix réduit. Support client prioritaire inclus.">
   <meta name="keywords" content="offre 12 mois VisionZone, abonnement annuel, passion streaming, 29.99 euros, économies maximales">
-  <meta property="og:title" content="Offre Passion 12 mois VisionZone - 29,99€ | Maximum d'Économies">
-  <meta property="og:description" content="Notre offre Passion 12 mois à 29,99€ - Pour les vrais passionnés ! Économies maximales, streaming 4K HDR, la solution la plus complète.">
+  <meta property="og:title" content="Offre IPTV 12 mois – VisionZone abonnement en direct">
+  <meta property="og:description" content="Optez pour l'abonnement IPTV 12 mois VisionZone : le meilleur du direct TV, films et séries à prix avantageux. Support client réactif.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://visionzone.tv/offre-12mois.html">
   <meta property="og:image" content="https://visionzone.tv/imgs/1ans.png">
   <meta property="og:site_name" content="VisionZone">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Offre Passion 12 mois VisionZone - 29,99€">
-  <meta name="twitter:description" content="Notre offre Passion 12 mois à 29,99€ - Pour les vrais passionnés ! Économies maximales, streaming 4K HDR.">
+  <meta name="twitter:title" content="Offre IPTV 12 mois – VisionZone abonnement en direct">
+  <meta name="twitter:description" content="Optez pour l'abonnement IPTV 12 mois VisionZone : le meilleur du direct TV, films et séries à prix avantageux. Support client réactif.">
   <meta name="twitter:image" content="https://visionzone.tv/imgs/1ans.png">
   <link rel="canonical" href="https://visionzone.tv/offre-12mois.html">
   <meta name="robots" content="index, follow">
@@ -771,8 +771,8 @@
 
   <div class="offer-landing">
     <div class="offer-header">
-      <h1 class="offer-title">Offre Passion 12 Mois à 29,99 €</h1>
-      <div class="offer-subtitle">🏆 Notre solution la plus complète et économique</div>
+      <h1 class="offer-title">Offre Passion 12 Mois à <span class="offer-title-price">29,99&nbsp;€</span></h1>
+      <div class="offer-subtitle"> Notre solution la plus complète et économique</div>
       <p class="offer-desc">L'expérience premium ultime avec 12 mois d'accès complet, tous les avantages exclusifs et des économies maximales. Plus de 50 000 familles nous font déjà confiance pour leur divertissement quotidien.</p>
     </div>
 
@@ -922,16 +922,17 @@
     // Fonction pour mettre à jour le titre avec le prix dynamique
     function updateOfferTitle(lang) {
       const offerTitle = document.querySelector('.offer-title');
+      const offerTitlePrice = document.querySelector('.offer-title-price');
       const screenCount = parseInt(screenSelect.value);
       const totalPrice = prixOffre12Mois[screenCount] || 29.99;
-      
+
       if (lang === 'en') {
         // Format anglais
-        offerTitle.textContent = `Passion Offer 12 Months at €${totalPrice.toFixed(2)}`;
+        offerTitle.innerHTML = `Passion Offer 12 Months at <span class="offer-title-price">€${totalPrice.toFixed(2)}</span>`;
       } else {
         // Format français
         const prixFr = totalPrice.toFixed(2).replace('.', ',');
-        offerTitle.textContent = `Offre Passion 12 Mois à ${prixFr} €`;
+        offerTitle.innerHTML = `Offre Passion 12 Mois à <span class="offer-title-price">${prixFr}&nbsp;€</span>`;
       }
     }
     
@@ -998,7 +999,7 @@
                 },
                 description: currentLanguage === 'en' 
                   ? `VisionZone Passion 12 months - ${ecrans} screen${ecrans > 1 ? 's' : ''}` 
-                  : `VisionZone Passion 12 mois - ${ecrans} écran${ecrans > 1 ? 's' : ''}`
+                  : `VisionZone IPTV 12 mois - ${ecrans} écran${ecrans > 1 ? 's' : ''}`
               }]
             });
           },
