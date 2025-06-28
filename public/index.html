@@ -52,6 +52,9 @@
     "@context": "https://schema.org",
     "@type": "Product",
     "name": "VisionZone - Solution de Divertissement Premium",
+    "image": [
+      "https://visionzone.tv/imgs/accueil.png"
+    ],
     "description": "Films, séries et sport en direct en qualité 4K",
     "brand": {
       "@type": "Brand",
@@ -63,21 +66,81 @@
         "name": "Formule Découverte",
         "price": "9.99",
         "priceCurrency": "EUR",
-        "description": "3 mois d'accès complet sans engagement"
-      },
-      {
-        "@type": "Offer", 
-        "name": "Formule Équilibre",
-        "price": "19.99",
-        "priceCurrency": "EUR",
-        "description": "6 mois d'accès complet avec 25% d'économies"
+        "description": "3 mois d'accès complet sans engagement",
+        "image": "https://visionzone.tv/imgs/3mois.png",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2025-12-31",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": "0",
+            "currency": "EUR"
+          },
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": ["FR", "US", "CA", "BE", "CH", "MA", "DZ", "TN", "SN", "CI", "CM", "International"]
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": ["FR", "US", "CA", "BE", "CH", "MA", "DZ", "TN", "SN", "CI", "CM", "International"],
+          "returnPolicyCategory": "https://schema.org/NoReturns"
+        }
       },
       {
         "@type": "Offer",
-        "name": "Formule Passion", 
+        "name": "Formule Équilibre",
+        "price": "19.99",
+        "priceCurrency": "EUR",
+        "description": "6 mois d'accès complet avec 25% d'économies",
+        "image": "https://visionzone.tv/imgs/6mois.png",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2025-12-31",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": "0",
+            "currency": "EUR"
+          },
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": ["FR", "US", "CA", "BE", "CH", "MA", "DZ", "TN", "SN", "CI", "CM", "International"]
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": ["FR", "US", "CA", "BE", "CH", "MA", "DZ", "TN", "SN", "CI", "CM", "International"],
+          "returnPolicyCategory": "https://schema.org/NoReturns"
+        }
+      },
+      {
+        "@type": "Offer",
+        "name": "Formule Passion",
         "price": "29.99",
         "priceCurrency": "EUR",
-        "description": "12 mois d'accès complet avec maximum d'économies"
+        "description": "12 mois d'accès complet avec maximum d'économies",
+        "image": "https://visionzone.tv/imgs/1ans.png",
+        "availability": "https://schema.org/InStock",
+        "priceValidUntil": "2025-12-31",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": "0",
+            "currency": "EUR"
+          },
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": ["FR", "US", "CA", "BE", "CH", "MA", "DZ", "TN", "SN", "CI", "CM", "International"]
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": ["FR", "US", "CA", "BE", "CH", "MA", "DZ", "TN", "SN", "CI", "CM", "International"],
+          "returnPolicyCategory": "https://schema.org/NoReturns"
+        }
       }
     ]
   }
